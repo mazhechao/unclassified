@@ -21,7 +21,7 @@ city = ["%E5%8D%97%E4%BA%AC", # ÄÏ¾©
 		"%e5%be%90%e5%b7%9e"] #ÐìÖÝ
 
 host = "common.jiangsu.sina.com.cn"
-url = "/z/2013hope/getList.php?city=" + city[12] + "&page="
+url = "/z/2013hope/getList.php?city=" + city[0] + "&page="
 for i in range(1,20):
 	conn = httplib.HTTPConnection(host)
 	conn.request("GET", url+repr(i))
